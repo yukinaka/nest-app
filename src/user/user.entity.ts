@@ -6,7 +6,7 @@ import {
   UpdateDateColumn,
   BeforeInsert,
 } from 'typeorm';
-import * as bcrypt from 'bcrypt'
+import * as bcrypt from 'bcrypt';
 
 @Entity()
 export class UserEntity {
@@ -22,10 +22,10 @@ export class UserEntity {
   @Column({ select: false })
   password: string;
 
-  @Column({default: ''})
+  @Column({ default: '' })
   bio: string;
 
-  @Column({default: ''})
+  @Column({ default: '' })
   image: string;
 
   @UpdateDateColumn()
